@@ -1,0 +1,49 @@
+#
+# Editor backup files
+#
+*.bak
+*~
+
+
+#
+# EAGLE files
+#
+eagle.epf
+*.s#?
+*.b#?
+*.l#?
+*.pro
+
+#
+# CAM files
+#
+*.$$$
+*.cmp
+*.ly2
+*.l15
+*.sol
+*.plc
+*.stc
+*.sts
+*.crc
+*.crs
+*.dri
+*.drl
+*.gpi
+*.pls
+*.drd
+*.drd.*
+*.info
+*.eps
+
+
+#
+# LTSPICE files
+#
+*.raw
+*.log
+*.net
+*.plt
+*.fft
+Draft*.asc
+
