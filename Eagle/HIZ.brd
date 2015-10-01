@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="6.25" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="2" display="yes" altdistance="6.25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -586,26 +586,26 @@ http://dangerousprototypes.com</description>
 <element name="LED3" library="dp_devices" package="LED-805" value="" x="18" y="22" smashed="yes" rot="R90">
 <attribute name="VALUE" x="19.27" y="24.54" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="LED4" library="adafruit" package="1206" value="" x="15" y="10" smashed="yes">
+<element name="IR-LED" library="adafruit" package="1206" value="" x="15" y="10" smashed="yes">
 <attribute name="VALUE" x="13.73" y="7.46" size="1.27" layer="27"/>
 </element>
 <element name="SW1" library="dp_devices" package="SW_TACT_3X6" value="SW_TACT_2P-3X6" x="22.5" y="5" smashed="yes" rot="R270"/>
 <element name="IC1" library="dp_devices" package="SO-8" value="IC_UC_PIC12F508SOIC" x="14" y="16" smashed="yes"/>
-<element name="R1" library="SmallRoomLabs_Discrete" package="R0805" value="R-0805" x="3.5" y="18.5" smashed="yes"/>
+<element name="R1" library="SmallRoomLabs_Discrete" package="R0805" value="270" x="3.5" y="18.5" smashed="yes"/>
 <element name="SW2" library="dp_devices" package="SLIDE_SWITCH_SMD" value="SW_SLIDE" x="14.5" y="2" smashed="yes"/>
-<element name="C1" library="dp_devices" package="C805" value="" x="10" y="14.5" smashed="yes" rot="R90">
+<element name="C1" library="dp_devices" package="C805" value="100n" x="10" y="14.5" smashed="yes" rot="R90">
 <attribute name="VALUE" x="12.2225" y="13.23" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
-<element name="C2" library="dp_devices" package="C805" value="" x="8.5" y="6" smashed="yes" rot="R90">
+<element name="C2" library="dp_devices" package="C805" value="100n" x="8.5" y="6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="10.7225" y="4.73" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
-<element name="C3" library="dp_devices" package="C805" value="" x="8" y="14.5" smashed="yes" rot="R90">
+<element name="C3" library="dp_devices" package="C805" value="10u" x="8" y="14.5" smashed="yes" rot="R90">
 <attribute name="VALUE" x="10.2225" y="13.23" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
-<element name="C4" library="dp_devices" package="C805" value="" x="6" y="14.5" smashed="yes" rot="R90">
+<element name="C4" library="dp_devices" package="C805" value="10u" x="6" y="14.5" smashed="yes" rot="R90">
 <attribute name="VALUE" x="8.2225" y="13.23" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
-<element name="R2" library="SmallRoomLabs_Discrete" package="R0805" value="R-0805" x="19.5" y="10" smashed="yes"/>
+<element name="R2" library="SmallRoomLabs_Discrete" package="R0805" value="100" x="19.5" y="10" smashed="yes"/>
 <element name="JP1" library="SmallRoomLabs_ConSwitch" package="JP2-T" value="JP2-TINY" x="4.5" y="23.5" smashed="yes" rot="MR0"/>
 <element name="JP2" library="SmallRoomLabs_ConSwitch" package="JP2-T" value="JP2-TINY" x="20.5" y="23.5" smashed="yes" rot="MR0"/>
 <element name="BA1" library="SmallRoomLabs_Battery" package="CR2032-PTH-CHEAP" value="BATTERY-3V2032PTH-CHEAP" x="12" y="14" rot="MR0"/>
@@ -774,11 +774,11 @@ http://dangerousprototypes.com</description>
 </signal>
 <signal name="N$7">
 <contactref element="R2" pad="1"/>
-<contactref element="LED4" pad="C"/>
+<contactref element="IR-LED" pad="C"/>
 <wire x1="16.422" y1="10" x2="18.55" y2="10" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="LED4" pad="A"/>
+<contactref element="IR-LED" pad="A"/>
 <contactref element="IC1" pad="2"/>
 <wire x1="13.365" y1="13.31" x2="13.365" y2="10.213" width="0.2032" layer="1"/>
 <wire x1="13.365" y1="10.213" x2="13.578" y2="10" width="0.2032" layer="1"/>
